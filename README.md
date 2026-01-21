@@ -73,10 +73,11 @@ Dense Layer (4 classes, Softmax)
 ```
 Alzheimer-Disease-Classification/
 ├── alzheimers-prediction-model.ipynb    # Training notebook
-├── alzheimer_model.keras                 # Trained model weights
-├── app.py                                # Streamlit application
-├── requirements. txt                      # Python dependencies
-└── README.md                             # Project documentation
+├── alzheimer_model.keras                # Trained model weights
+├── app.py                               # Streamlit application
+├── requirements. txt                    # Python dependencies for Streamlit Application
+├── notebook_reqs.txt                    # Python dependencies for Training notebook
+└── README.md                            # Project documentation
 ```
 
 ## 🚀 Getting Started
