@@ -121,23 +121,6 @@ predicted_class = labels[tf.argmax(prediction[0]).numpy()]
 print(f"Predicted:  {predicted_class}")
 ```
 
-## 📈 Key Features
-
-- **Transfer Learning**:  Utilizes EfficientNet-B0 pre-trained on ImageNet for robust feature extraction
-- **Bias Audit**: Dataset verified to be robust against metadata shortcuts (image size doesn't correlate with labels)
-- **Efficient Data Pipeline**: Uses `tf.data` with parallel processing and prefetching for optimal GPU utilization
-- **Stratified Sampling**:  Maintains consistent class distribution across train/val/test splits
-
-## 📋 Notebook Sections
-
-1. **Data Exploration** - Visualizing sample MRI images from each class
-2. **Data Analysis** - Class distribution and image metadata analysis
-3. **Bias Audit** - Ensuring model can't exploit metadata shortcuts
-4. **Preprocessing** - Image resizing, normalization, and data pipeline creation
-5. **Model Building** - EfficientNet-B0 transfer learning architecture
-6. **Training** - Model training with validation monitoring
-7. **Evaluation** - Performance metrics and confusion matrix
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
